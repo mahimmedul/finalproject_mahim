@@ -1,0 +1,178 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #1BBC9D;
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"],
+form input[type="password"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #1BBC9D;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(27, 188, 157, 0.5);
+    outline: none;
+}
+
+/* Buttons */
+button, .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #1BBC9D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #17a589;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Links for Delete Page */
+a.delete-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #d9534f;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a.delete-link:hover {
+    color: #c9302c;
+    text-decoration: underline;
+}
+
+/* Success & Error Messages */
+.message-success {
+    color: #1BBC9D;
+    background-color: #e6f7f3;
+    border: 1px solid #1BBC9D;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.message-error {
+    color: #d9534f;
+    background-color: #fbe6e6;
+    border: 1px solid #d9534f;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Tables for Delete/Update Pages */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+table th {
+    background-color: #1BBC9D;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td a {
+    color: #1BBC9D;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+table td a:hover {
+    color: #17a589;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    button, .btn {
+        width: 100%;
+    }
+}
